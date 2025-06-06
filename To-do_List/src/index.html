@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do_List</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-[#000000] text-xl md:text-2xl text-[#ffffff] p-0 m-0 h-screen w-full flex justify-center items-center">
+    <main>
+        <h1 class=" flex justify-center md:mb-10 md:text-6xl font-bold text-4xl mb-5">To-Do&nbsp;<span class="text-[#972929]">List</span></h1>
+        <section class=" border-3 flex flex-col h-150 w-90 p-5 bg-[#1e1e1d] md:w-315 md:h-210 md:flex md:flex-col md:rounded-lg">
+            <div class=" flex md:flex-row flex-col gap-5 md:my-5 md:w-300">
+                <input id="text" type="text" placeholder="Enter your task" class="bg-[#4b4b4b] p-3 md:w-140 md:m-6 md:ml-20 rounded-lg">
+                
+                    <input id="date" type="date"  class="bg-[#4b4b4b] p-3  md:m-6 md:mx-5 md:w-80  rounded-lg ">
+                <select name="priority" id="priority" class="bg-[#4b4b4b] p-3  md:m-6 md:mx-5 md:w-80  rounded-lg">
+                    <option value="Select" >Select</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                
+                
+                <button id="btn" class="bg-[#972929] h-10 md:h-15 rounded-lg md:m-6 md:mx-3 md:px-2 md:py-1 md:w-50 mb-2 font-bold">Add Task</button>
+            </div>
+            <div class="bg-[#4b4b4b] md:w-240  md:h-155 h-80 my-3 md:mx-20 md:my-3 rounded-lg overflow-y-auto">
+                <ul id="unorderedList" class="my-2 md:my-3" >
+                    <!-- Elements will be added dynamically -->
+                     
+                </ul>
+
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
